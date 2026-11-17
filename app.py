@@ -3,7 +3,7 @@
 import joblib
 from flask import Flask,request,render_template
 
-testingmodel = joblib.load("DBS_SGD_model.pkl")
+dbsModel = joblib.load("DBS_SGD_model.pkl")
 app = Flask(__name__)
 
 @app.route("/", methods=["GET","POST"])
